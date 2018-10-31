@@ -46,9 +46,18 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#photo's">Photos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-floating btn-small indigo darken-4">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                <li><a href="#" class="btn-floating btn-small indigo darken-4">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                <li><a href="#" class="btn-floating btn-small indigo darken-4">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
             </ul>
             <ul class="sidenav grey lighten-2" id="mobile-menu">
                 <li><a href="#">Photos</a></li>
@@ -99,7 +108,7 @@
   <!-- parallax -->
   <div class="parallax-container">
       <div class="parallax">
-          <img src="images/stars.jpg" alt="" class="responsive-img">
+          <img src="images/street.jpg" alt="" class="responsive-img">
       </div>
 
   </div>
@@ -145,10 +154,87 @@
 
     </section>
   <!-- parallax -->
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="images/stars.jpg" alt="" class="responsive-img">
+    </div>
 
+</div>
   <!-- contact form -->
+  <section class="section container" id="contact">
+      <div class="row">
+          <div class="col s12 l5">
+              <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+            <p>Lorem ipsum dolor dit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+                suscipit elit nec, tincidunt orci.
+            </p>
+            <p>Lorem ipsum dolor dit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+                suscipit elit nec, tincidunt orci.
+            </p>
+            <p>Lorem ipsum dolor dit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+                suscipit elit nec, tincidunt orci.
+            </p>
+            <p>Lorem ipsum dolor dit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+                suscipit elit nec, tincidunt orci.
+            </p>
+          </div>
+          <div class="col s12 l5 offset-l2">
+              <form>
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label>
+                  </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date</i>
+                    <input id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for...</label>
+                </div>
+                <div class="input-field">
+                    <p>Services required...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photography</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>editing</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">submit</button>
+                </div>
+              </form>
+          </div>
+      </div>
+
+  </section>
 
   <!-- footer -->
+  <footer class="page-footer gray darken-3">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 l6">
+                 <h5>About Me</h5>
+                <p>Lorem ipsum dolor dit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+                    suscipit elit nec, tincidunt orci.
+                </p>
+                <p>Lorem ipsum dolor dit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+                    suscipit elit nec, tincidunt orci.
+                </p>
+              </div>
+          </div>
+      </div>
+  </footer>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -159,6 +245,9 @@
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
         $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends:true
+        });
     });
   </script>
 </body>
